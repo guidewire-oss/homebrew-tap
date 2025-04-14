@@ -5,21 +5,21 @@
 class Clx < Formula
   desc "Generate Kubernetes Bill of Materials for a Kubernetes cluster."
   homepage "https://github.com/guidewire-oss"
-  version "0.0.1"
+  version "0.0.2"
   license "Apache 2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/guidewire-oss/cluster-codex/releases/download/v0.0.1/clx_0.0.1_darwin_amd64.tar.gz"
-      sha256 "bf88f184be5ecc48de13e0b8c5d93b101fa272ac0d9b89a896b58d41a84a12fb"
+      url "https://github.com/guidewire-oss/cluster-codex/releases/download/v0.0.2/clx_0.0.2_darwin_amd64.tar.gz"
+      sha256 "52f87d0028c5b3b9efbd90da19938d6784fb96bf2e8f74f794729427dac51e87"
 
       def install
         bin.install "clx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/guidewire-oss/cluster-codex/releases/download/v0.0.1/clx_0.0.1_darwin_arm64.tar.gz"
-      sha256 "b1e86da6caf65aaf67b9215d092805ecfda2e2e40b41f452f7c3f279f46c2578"
+      url "https://github.com/guidewire-oss/cluster-codex/releases/download/v0.0.2/clx_0.0.2_darwin_arm64.tar.gz"
+      sha256 "3dff77e7e2cec576f95ead5928a12766e03abc3a18a4f2e6eb1df686e5265bc4"
 
       def install
         bin.install "clx"
@@ -30,8 +30,8 @@ class Clx < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/guidewire-oss/cluster-codex/releases/download/v0.0.1/clx_0.0.1_linux_amd64.tar.gz"
-        sha256 "2dba00ce44057c7f36450b0c0ebde96dcbcf78b2106ccb6a7854f79218e6c3a9"
+        url "https://github.com/guidewire-oss/cluster-codex/releases/download/v0.0.2/clx_0.0.2_linux_amd64.tar.gz"
+        sha256 "cf7a7b120069b6457100d1d3e73433fa978d921179082d33ea02680c922a80b1"
 
         def install
           bin.install "clx"
@@ -40,8 +40,8 @@ class Clx < Formula
     end
     if Hardware::CPU.arm?
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/guidewire-oss/cluster-codex/releases/download/v0.0.1/clx_0.0.1_linux_arm.tar.gz"
-        sha256 "69f26c0cb070793b894f56b4adb1b60b2163fb9b6b5881bfe548be2b8f1b6fb4"
+        url "https://github.com/guidewire-oss/cluster-codex/releases/download/v0.0.2/clx_0.0.2_linux_arm.tar.gz"
+        sha256 "87b962a1588821f6022ce4fdc949a7033539a96ee1186a94fdaa682476ec9eaa"
 
         def install
           bin.install "clx"
@@ -50,8 +50,8 @@ class Clx < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/guidewire-oss/cluster-codex/releases/download/v0.0.1/clx_0.0.1_linux_arm64.tar.gz"
-        sha256 "c40d71e9914f6805005d0e16850a0f50a3b1076356042264bc74ca0aa38fb1e7"
+        url "https://github.com/guidewire-oss/cluster-codex/releases/download/v0.0.2/clx_0.0.2_linux_arm64.tar.gz"
+        sha256 "4a146afc9a6624295e6ee7541afcd95afe5a4d63ae50c29fcc724fff73c32a4d"
 
         def install
           bin.install "clx"
